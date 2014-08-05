@@ -34,37 +34,15 @@
 
 
     <section id="hero">
-        <div class="hero-block">
-          <img class="img-circle" src="images/jrcodz.jpg" class="hero-image">
-        </div>
+        
     </section>
-    <div class="span6" ng-app="ExampleSigninApp">
-        <div ng-controller="ExampleCtrl">
-          <google-plus-signin clientid="799328755878-400hno4u8fb879opt9b60en70lfu2ofd"></google-plus-signin>
-          <p>This is a Google Plus sign-in button</p>
-        </div>
-    </div>
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
-    <script src="javascripts/google-plus-signin.js"></script>
     <script src="javascripts/bootstrap.js"></script>
     <!-- <script src="../../assets/js/docs.min.js"></script> -->
-    <script>
-    angular.module('ExampleSigninApp', ['directive.g+signin'])
-      .controller('ExampleCtrl', function ($scope) {
-        $scope.$on('event:google-plus-signin-success', function (event, authResult) {
-          // User successfully authorized the G+ App!
-          console.log('Signed in!');
-        });
-        $scope.$on('event:google-plus-signin-failure', function (event, authResult) {
-          // User has not authorized the G+ App!
-          console.log('Not signed into Google Plus.');
-        });
-      });
-    </script>
   </body>
 </html>
